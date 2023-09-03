@@ -1,0 +1,1029 @@
+{
+	"info": {
+		"_postman_id": "62eebb2e-64a8-4c20-806a-d1769d62dbd9",
+		"name": "Remon Vacancy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6462213"
+	},
+	"item": [
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"userName\": \"Employer1@app.com\",\r\n  \"password\": \"Employer1Password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Account/Login",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Account",
+								"Login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login_SuperAdmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userName\": \"admin@app.com\",\r\n  \"password\": \"Qwe_123456\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Account/Login",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Account",
+										"Login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 18:55:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T21:55:44.8796788+03:00\",\n    \"isError\": false,\n    \"description\": null,\n    \"result\": {\n        \"id\": \"6ace6b9f-0c0c-4c4d-be13-2e41e79e9645\",\n        \"firstName\": \"Admin\",\n        \"lastName\": \"App\",\n        \"email\": \"admin@App.com\",\n        \"userName\": \"admin@App.com\",\n        \"password\": null,\n        \"phoneNumber\": \"01285473767\",\n        \"emailConfirmed\": true,\n        \"roles\": null,\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWNlNmI5Zi0wYzBjLTRjNGQtYmUxMy0yZTQxZTc5ZTk2NDUiLCJlbWFpbCI6ImFkbWluQEFwcC5jb20iLCJqdGkiOiJjODIxNjRkOC00NDUyLTQ5NTAtYWUzZS01NWQ2Njc5ZGY4MTkiLCJleHAiOjE2OTM3NjczNDQsImlzcyI6ImFwaSIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzY4LyJ9.bfc0tsHkSj8ii0vRKK-yvzC_rZsKm2Z5DogxdNR6qWo\",\n        \"imageUrl\": null,\n        \"socialLoginId\": null,\n        \"dateAdded\": \"0001-01-01T00:00:00\"\n    }\n}"
+						},
+						{
+							"name": "Login_Employer1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userName\": \"Employer1@app.com\",\r\n  \"password\": \"Employer1Password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Account/Login",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Account",
+										"Login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 18:55:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T21:55:44.8796788+03:00\",\n    \"isError\": false,\n    \"description\": null,\n    \"result\": {\n        \"id\": \"6ace6b9f-0c0c-4c4d-be13-2e41e79e9645\",\n        \"firstName\": \"Admin\",\n        \"lastName\": \"App\",\n        \"email\": \"admin@App.com\",\n        \"userName\": \"admin@App.com\",\n        \"password\": null,\n        \"phoneNumber\": \"01285473767\",\n        \"emailConfirmed\": true,\n        \"roles\": null,\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWNlNmI5Zi0wYzBjLTRjNGQtYmUxMy0yZTQxZTc5ZTk2NDUiLCJlbWFpbCI6ImFkbWluQEFwcC5jb20iLCJqdGkiOiJjODIxNjRkOC00NDUyLTQ5NTAtYWUzZS01NWQ2Njc5ZGY4MTkiLCJleHAiOjE2OTM3NjczNDQsImlzcyI6ImFwaSIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzY4LyJ9.bfc0tsHkSj8ii0vRKK-yvzC_rZsKm2Z5DogxdNR6qWo\",\n        \"imageUrl\": null,\n        \"socialLoginId\": null,\n        \"dateAdded\": \"0001-01-01T00:00:00\"\n    }\n}"
+						},
+						{
+							"name": "Login_Applicant1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"userName\":  \"Applicant1@app.com\",\r\n  \"password\": \"Applicant1Password\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Account/Login",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Account",
+										"Login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 18:55:44 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T21:55:44.8796788+03:00\",\n    \"isError\": false,\n    \"description\": null,\n    \"result\": {\n        \"id\": \"6ace6b9f-0c0c-4c4d-be13-2e41e79e9645\",\n        \"firstName\": \"Admin\",\n        \"lastName\": \"App\",\n        \"email\": \"admin@App.com\",\n        \"userName\": \"admin@App.com\",\n        \"password\": null,\n        \"phoneNumber\": \"01285473767\",\n        \"emailConfirmed\": true,\n        \"roles\": null,\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YWNlNmI5Zi0wYzBjLTRjNGQtYmUxMy0yZTQxZTc5ZTk2NDUiLCJlbWFpbCI6ImFkbWluQEFwcC5jb20iLCJqdGkiOiJjODIxNjRkOC00NDUyLTQ5NTAtYWUzZS01NWQ2Njc5ZGY4MTkiLCJleHAiOjE2OTM3NjczNDQsImlzcyI6ImFwaSIsImF1ZCI6Imh0dHBzOi8vbG9jYWxob3N0OjQ0MzY4LyJ9.bfc0tsHkSj8ii0vRKK-yvzC_rZsKm2Z5DogxdNR6qWo\",\n        \"imageUrl\": null,\n        \"socialLoginId\": null,\n        \"dateAdded\": \"0001-01-01T00:00:00\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Register_Employer1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"F_Employer\",\r\n  \"lastName\": \"L_Employer\",\r\n  \"email\": \"Employer1@app.com\",\r\n  \"password\": \"Employer1Password\",\r\n  \"confirmPassword\": \"Employer1Password\",\r\n  \"phoneNumber\": \"01211111111\",\r\n   \"roles\": \"Employer\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Account/Registeration",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Account",
+								"Registeration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register_Employer2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Fr_Employer\",\r\n  \"lastName\": \"La_Employer\",\r\n  \"email\": \"Employer2@app.com\",\r\n  \"password\": \"Employer2Password\",\r\n  \"confirmPassword\": \"Employer2Password\",\r\n  \"phoneNumber\": \"01222222222\",\r\n    \"roles\": \"Employer\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Account/Registeration",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Account",
+								"Registeration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register_Applicant1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"F_Applicant\",\r\n  \"lastName\": \"L_Applicant\",\r\n  \"email\": \"Applicant1@app.com\",\r\n  \"password\": \"Applicant1Password\",\r\n  \"confirmPassword\": \"Applicant1Password\",\r\n  \"phoneNumber\": \"01185473767\",\r\n   \"roles\": \"Applicant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Account/Registeration",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Account",
+								"Registeration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register_Applicant2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Fr_Applicant\",\r\n  \"lastName\": \"La_Applicant\",\r\n  \"email\": \"Applicant2@app.com\",\r\n  \"password\": \"Applicant2Password\",\r\n  \"confirmPassword\": \"Applicant2Password\",\r\n  \"phoneNumber\": \"01585473767\",\r\n   \"roles\": \"Applicant\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Account/Registeration",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Account",
+								"Registeration"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vacancy",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44369/api/Vacancy/GetAll",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Vacancy",
+								"GetAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SearchByVacancyName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44369/api/Vacancy/SearchByVacancyName?Search=Vacancy2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Vacancy",
+								"SearchByVacancyName"
+							],
+							"query": [
+								{
+									"key": "Search",
+									"value": "Vacancy2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maxApplicant\": 10,\r\n  \"expiryDate\": \"2023-09-04T11:16:59.559Z\",\r\n  \"description\": \"Vacancy1 description\",\r\n  \"descriptionAr\": \"Vacancy1 descriptionAr\",\r\n  \"name\": \"Vacancy1 name\",\r\n  \"nameAr\": \"Vacancy1 nameAr\",\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Vacancy/AddVacancy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Vacancy",
+								"AddVacancy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AddVacancy1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"maxApplicant\": 10,\r\n  \"expiryDate\": \"2023-09-01T11:16:59.559Z\",\r\n  \"description\": \"Vacancy1 description\",\r\n  \"descriptionAr\": \"Vacancy1 descriptionAr\",\r\n  \"name\": \"Vacancy1 name\",\r\n  \"nameAr\": \"Vacancy1 nameAr\",\r\n  \"id\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Vacancy/AddVacancy",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Vacancy",
+										"AddVacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 19:42:43 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T22:42:43.5503841+03:00\",\n    \"isError\": false,\n    \"description\": null,\n    \"result\": {\n        \"maxApplicant\": 10,\n        \"expiryDate\": \"2023-09-04T11:16:59.559Z\",\n        \"description\": \"Vacancy1 description\",\n        \"descriptionAr\": \"Vacancy1 descriptionAr\",\n        \"name\": \"Vacancy1 name\",\n        \"nameAr\": \"Vacancy1 nameAr\",\n        \"id\": 2\n    }\n}"
+						},
+						{
+							"name": "AddVacancy2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"maxApplicant\": 20,\r\n  \"expiryDate\": \"2023-09-02T11:16:59.559Z\",\r\n  \"description\": \"Vacancy2 description\",\r\n  \"descriptionAr\": \"Vacancy2 descriptionAr\",\r\n  \"name\": \"Vacancy2 name\",\r\n  \"nameAr\": \"Vacancy2 nameAr\",\r\n  \"id\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Vacancy/AddVacancy",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Vacancy",
+										"AddVacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 19:42:43 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T22:42:43.5503841+03:00\",\n    \"isError\": false,\n    \"description\": null,\n    \"result\": {\n        \"maxApplicant\": 10,\n        \"expiryDate\": \"2023-09-04T11:16:59.559Z\",\n        \"description\": \"Vacancy1 description\",\n        \"descriptionAr\": \"Vacancy1 descriptionAr\",\n        \"name\": \"Vacancy1 name\",\n        \"nameAr\": \"Vacancy1 nameAr\",\n        \"id\": 2\n    }\n}"
+						},
+						{
+							"name": "AddVacancy3",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"maxApplicant\": 30,\r\n  \"expiryDate\": \"2023-09-03T11:16:59.559Z\",\r\n  \"description\": \"Vacancy3 description\",\r\n  \"descriptionAr\": \"Vacancy3 descriptionAr\",\r\n  \"name\": \"Vacancy3 name\",\r\n  \"nameAr\": \"Vacancy3 nameAr\",\r\n  \"id\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Vacancy/AddVacancy",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Vacancy",
+										"AddVacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 19:42:43 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T22:42:43.5503841+03:00\",\n    \"isError\": false,\n    \"description\": null,\n    \"result\": {\n        \"maxApplicant\": 10,\n        \"expiryDate\": \"2023-09-04T11:16:59.559Z\",\n        \"description\": \"Vacancy1 description\",\n        \"descriptionAr\": \"Vacancy1 descriptionAr\",\n        \"name\": \"Vacancy1 name\",\n        \"nameAr\": \"Vacancy1 nameAr\",\n        \"id\": 2\n    }\n}"
+						},
+						{
+							"name": "AddVacancy4",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"maxApplicant\": 4,\r\n  \"expiryDate\": \"2023-09-04T11:16:59.559Z\",\r\n  \"description\": \"Vacancy4 description\",\r\n  \"descriptionAr\": \"Vacancy4 descriptionAr\",\r\n  \"name\": \"Vacancy4 name\",\r\n  \"nameAr\": \"Vacancy4 nameAr\",\r\n  \"id\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Vacancy/AddVacancy",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Vacancy",
+										"AddVacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 19:42:43 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T22:42:43.5503841+03:00\",\n    \"isError\": false,\n    \"description\": null,\n    \"result\": {\n        \"maxApplicant\": 10,\n        \"expiryDate\": \"2023-09-04T11:16:59.559Z\",\n        \"description\": \"Vacancy1 description\",\n        \"descriptionAr\": \"Vacancy1 descriptionAr\",\n        \"name\": \"Vacancy1 name\",\n        \"nameAr\": \"Vacancy1 nameAr\",\n        \"id\": 2\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2YzE4ZDYxNy04N2ViLTQ2OGItYmY3MS03OGFmOTFjNGZhN2IiLCJlbWFpbCI6IkVtcGxveWVyMUBhcHAuY29tIiwianRpIjoiMWM4MDcyZjktZDY4My00ZDgzLTgwZjItZDUzZjYwN2IxOWQ5IiwiZXhwIjoxNjkzNzY5MzUzLCJpc3MiOiJhcGkiLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM2OC8ifQ.jw_ezQKW2OjiPRg793D8XRxl_-7idkvvQds7FRK0pQY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maxApplicant\": 1,\r\n  \"expiryDate\": \"2023-09-11T11:16:59.559Z\",\r\n  \"description\": \"Vacancy1 new description\",\r\n  \"descriptionAr\": \"Vacancy1 new descriptionAr\",\r\n  \"name\": \"Vacancy1 new name\",\r\n  \"nameAr\": \"Vacancy1 new nameAr\",\r\n  \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Vacancy/UpdateVacancy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Vacancy",
+								"UpdateVacancy"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UpdateVacancy1",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"maxApplicant\": 1,\r\n  \"expiryDate\": \"2023-09-11T11:16:59.559Z\",\r\n  \"description\": \"Vacancy1 new description\",\r\n  \"descriptionAr\": \"Vacancy1 new descriptionAr\",\r\n  \"name\": \"Vacancy1 new name\",\r\n  \"nameAr\": \"Vacancy1 new nameAr\",\r\n  \"id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Vacancy/UpdateVacancy",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Vacancy",
+										"UpdateVacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 19:47:40 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T22:47:40.0379326+03:00\",\n    \"isError\": true,\n    \"description\": \"Entity not exist or Id not valid\",\n    \"result\": null\n}"
+						},
+						{
+							"name": "UpdateVacancy2",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"maxApplicant\": 2,\r\n  \"expiryDate\": \"2023-09-12T11:16:59.559Z\",\r\n  \"description\": \"Vacancy2 new description\",\r\n  \"descriptionAr\": \"Vacancy2 new descriptionAr\",\r\n  \"name\": \"Vacancy2 new name\",\r\n  \"nameAr\": \"Vacancy2 new nameAr\",\r\n  \"id\": 2\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "https://localhost:44369/api/Vacancy/UpdateVacancy",
+									"protocol": "https",
+									"host": [
+										"localhost"
+									],
+									"port": "44369",
+									"path": [
+										"api",
+										"Vacancy",
+										"UpdateVacancy"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 02 Sep 2023 19:47:40 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-09-02T22:47:40.0379326+03:00\",\n    \"isError\": true,\n    \"description\": \"Entity not exist or Id not valid\",\n    \"result\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maxApplicant\": 10,\r\n  \"expiryDate\": \"2023-09-04T11:16:59.559Z\",\r\n  \"description\": \"Vacancy1 description\",\r\n  \"descriptionAr\": \"Vacancy1 descriptionAr\",\r\n  \"name\": \"Vacancy1 name\",\r\n  \"nameAr\": \"Vacancy1 nameAr\",\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Vacancy/DeleteVacancy?Id=3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Vacancy",
+								"DeleteVacancy"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deactivate",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44369/api/Vacancy/DeactivateVacancy?Id=4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Vacancy",
+								"DeactivateVacancy"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44369/api/Vacancy/UpdateVacancy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maxApplicant\": 2,\r\n  \"expiryDate\": \"2023-09-12T11:16:59.559Z\",\r\n  \"description\": \"Vacancy2 new description\",\r\n  \"descriptionAr\": \"Vacancy2 new descriptionAr\",\r\n  \"name\": \"Vacancy2 new name\",\r\n  \"nameAr\": \"Vacancy2 new nameAr\",\r\n  \"id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Vacancy/UpdateVacancy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Vacancy",
+								"UpdateVacancy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "https://localhost:44369/api/Vacancy/UpdateVacancy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"maxApplicant\": 1,\r\n  \"expiryDate\": \"2023-09-11T11:16:59.559Z\",\r\n  \"description\": \"Vacancy1 new description\",\r\n  \"descriptionAr\": \"Vacancy1 new descriptionAr\",\r\n  \"name\": \"Vacancy1 new name\",\r\n  \"nameAr\": \"Vacancy1 new nameAr\",\r\n  \"id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/Vacancy/UpdateVacancy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"Vacancy",
+								"UpdateVacancy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ApplicantVacancy",
+			"item": [
+				{
+					"name": "GetAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": ""
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllApplicants",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44369/api/ApplicantVacancy/GetAllApplicantByVacancyId?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"ApplicantVacancy",
+								"GetAllApplicantByVacancyId"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"vacancyId\": 2,\r\n  \"applicantId\": \"applicantId\",\r\n  \"fullName\": \"fullName\",\r\n  \"id\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:44369/api/ApplicantVacancy/AddApplicantVacancy",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"ApplicantVacancy",
+								"AddApplicantVacancy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44369/api/ApplicantVacancy/DeleteApplicantVacancy?Id=2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44369",
+							"path": [
+								"api",
+								"ApplicantVacancy",
+								"DeleteApplicantVacancy"
+							],
+							"query": [
+								{
+									"key": "Id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
