@@ -1,4 +1,4 @@
-# My Awesome Project
+# Vacancy Management System
 
 Welcome to My Awesome Project! This repository contains an amazing application that does incredible things. Here's everything you need to know to get started.
 
