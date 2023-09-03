@@ -25,6 +25,13 @@ Before you begin, ensure you have met the following requirements:
 2.Open the project in Visual Studio or Visual Studio Code.
 
 3.Configure your database connection in appsettings.json:
+
+4.Run the following command in the Package Manager Console (PMC) to create the database and seed initial data (if using Entity Framework Core):
+ entityframeworkcore\update-database
+Note: Make sure you have selected the correct project in PMC before running this command
+
+5.Build and run the application.
+
 ```json
 {
   "SQLSERVER": {
@@ -35,11 +42,4 @@ Before you begin, ensure you have met the following requirements:
   }
 }
 
-
-
-  4.Run the following command in the Package Manager Console (PMC) to create the database and seed initial data (if using Entity Framework Core):
- entityframeworkcore\update-database
-Note: Make sure you have selected the correct project in PMC before running this command
-
-  5.Build and run the application.
 
